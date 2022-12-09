@@ -15,8 +15,8 @@
 	curl https://v.firebog.net/hosts/Admiral.txt --output ./Admiral.txt 
 	curl https://v.firebog.net/hosts/Prigent-Malware.txt --output ./Prigent-Malware.txt
 
-#combine lists, remove dupes and blank lines, split into 500k line files
-	cat ./*.txt | grep -v '^\s*$' | sort -u | split -l500000 - outfile_
+#combine lists, remove dupes and blank lines, remove all comment lines, split into 750k line files
+	cat ./*.txt | grep -v '^\s*$' | sort -u | sed '/^#/d' | split -l750000 - outfile_
 
 #clean up source text files
 	rm ./*.txt
