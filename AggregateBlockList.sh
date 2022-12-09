@@ -25,5 +25,5 @@
 	#git push -f origin master
 	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile1_aa
 	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ab
-	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ac
+	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ac	future growth
 	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ad	future growth
