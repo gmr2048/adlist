@@ -27,3 +27,10 @@
 	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ab
 	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ac
 	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ad
+
+cd /home/gmr2048/Documents/PiHole/adlist
+git commit -m "Add existing file"
+git push
+
+#git push origin adlist
+#git push origin main
