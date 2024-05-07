@@ -40,7 +40,8 @@ echo "git commit"
 git commit -m "Add existing file"
 
 echo "git push"
-git push origin main
+#git push origin main
+git remote set-url origin https://gmr2048@yahoo.com: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@github.com/gmr2048/adlist.git
 
 #username gmr2048
 #use personal access token "take2"
