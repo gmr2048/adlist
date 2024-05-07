@@ -30,7 +30,10 @@
 
 cd /home/gmr2048/Documents/PiHole/adlist
 git commit -m "Add existing file"
-git push
+git push origin main
+
+#username gmr2048
+#use personal access token "take2"
 
 #git push origin adlist
 #git push origin main
