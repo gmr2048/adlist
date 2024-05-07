@@ -39,8 +39,7 @@ git add .
 echo "git commit"
 git commit -m "Add existing file"
 
-echo "login to git"
-git remote set-url origin https://gmr2048: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@github.com/gmr2048/adlist.git
+#log in to git
 
 echo "git push"
 git push origin main
