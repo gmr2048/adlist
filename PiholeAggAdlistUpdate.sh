@@ -4,7 +4,7 @@
 #cron job to do this daily
 
 echo "curl download"
-#curl download all the individual lists
+#curl download all the individual lists#
 	curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts --output /home/gary/Documents/PiHole/StevenBlackHosts.txt
 	curl https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt --output /home/gary/Documents/PiHole/simple_tracking.txt
 	curl https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt --output /home/gary/Documents/PiHole/simple_ad.txt
