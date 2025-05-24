@@ -18,8 +18,8 @@
         curl https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt --output /home/gmr2048/Documents/PiHole/outfiles/hagezi-tif.txt
         curl https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.tiktok.txt  --output /home/gmr2048/Documents/PiHole/outfiles/hagezi-tiktok.txt
 
-#combine lists, remove dupes and blank lines, remove all comment lines, (not doing: split into 400k line files)
-        cat /home/gmr2048/Documents/PiHole/outfiles/*.txt | grep -v '^\s*$' | sort -u | sed '/^#/d' | split -l9999999999 - /home/gmr2048/Documents/PiHole/outfiles/outfile_
+#combine lists, remove dupes and blank lines, remove all comment lines, (not doing: split into 1B line files)
+        cat /home/gmr2048/Documents/PiHole/outfiles/*.txt | grep -v '^\s*$' | sort -u | sed '/^#/d' | split -l1000000000 - /home/gmr2048/Documents/PiHole/outfiles/outfile_
 
 #clean up source text files
         rm /home/gmr2048/Documents/PiHole/outfiles/*.txt
