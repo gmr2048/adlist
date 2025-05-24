@@ -17,36 +17,10 @@ echo "curl download"
 	curl https://v.firebog.net/hosts/Prigent-Malware.txt --output /home/gmr2048/Documents/PiHole/Prigent-Malware.txt
 
 echo "combine lists"
-#combine lists, remove dupes and blank lines, remove all comment lines, split into 750k line files
+#combine lists, remove dupes and blank lines, remove all comment lines, split into 1.4M line files
 	cat /home/gmr2048/Documents/PiHole/*.txt | grep -v '^\s*$' | sort -u | sed '/^#/d' | split -l400000 - outfile_
 
 echo "clean up"
 #clean up source text files
 	rm /home/gmr2048/Documents/PiHole/*.txt
-
-#upload here:
-	#git push -f origin master
-	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile1_aa
-	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ab
-	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ac
-	#https://raw.githubusercontent.com/gmr2048/adlist/main/outfile2_ad
-
-cd /home/gary/Documents/PiHole/adlist
-
-echo "git add"
-git add .
-
-echo "git commit"
-git commit -m "Add existing file"
-
-#log in to git
-
-echo "git push"
-git push origin main
-
-#username gmr2048
-#use personal access token "take2"
-
-#git push origin adlist
-#git push origin main
-echo "Done!"
+ 
